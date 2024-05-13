@@ -60,8 +60,7 @@ public class Ex3 {
     }
 
     public static void main(String[] args) {
-       Ex3 ex3 = new Ex3();
-//        String stringBase = "C:\\Users\\Adam Beres";
+        Ex3 ex3 = new Ex3();
         String stringBase = "C:\\Users";
         String string     = "C:\\Users\\Adam Beres\\OneDrive\\Bilder\\ControlCenter4\\Scan\\";
         String stringExpectedResult = "Bilder\\ControlCenter4\\Scan\\";
