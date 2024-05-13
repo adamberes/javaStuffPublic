@@ -1,17 +1,17 @@
 package streams;
 
-public class PfadElement {
+public class PathElement {
     private String name;
     private int order;
 
-    public PfadElement(String name, int order) {
+    public PathElement(String name, int order) {
         this.name = name;
         this.order = order;
     }
 
     @Override
     public String toString() {
-        return "PfadElement{" +
+        return "PathElement{" +
                 "name='" + name + '\'' +
                 ", order=" + order +
                 '}';

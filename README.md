@@ -1,21 +1,14 @@
 # javaStuffPublic
 
 
-Filter Lists
+Example for Filtering Lists with Streams 
 
-Remove List Elements from a list.
+Add Elements to a list with Streams.
+
+Remove Elements from a list with Streams.
 
 File: [src/main/java/streams/Ex3.java](./src/main/java/streams/Ex3.java)
 
 
 ## More Information in [RemoveElements.pdf](./RemoveElements.pdf)
 
-
-Filter Lists
-
-Remove List Elements from a list.
-
-File: [src/main/java/streams.Ex3.java](./src/main/java/streams.Ex3.java)
-
-
-## More Information in [RemoveElements.pdf](./RemoveElements.pdf)
