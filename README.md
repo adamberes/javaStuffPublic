@@ -6,7 +6,7 @@ Add the content from a list to an other list as streams.
 
 File: [src/main/java/streams/Ex2.java](./src/main/java/streams/Ex3.java)
 
-[Video: YouTube](https://youtu.be/csoAf6FuX30)
+[Video: YouTube](https://youtu.be/RPbgxtfUXp8)
 
 Example for Filtering Lists with Streams 
 
