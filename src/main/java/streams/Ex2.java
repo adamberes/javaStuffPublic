@@ -20,7 +20,7 @@ public class Ex2 {
         List<String> stringListLoverCase = Stream.iterate("a1",
                         s -> !s.isEmpty(), (s) -> String.format("%s", (char) loverCaseLetter.incrementAndGet()) + counter.incrementAndGet())
                 .limit(10)
-                .collect(Collectors.toList());
+                .toList();
 
         counter.set(1);
         List<String> stringListUpperCase = Stream.iterate("A1",
@@ -31,7 +31,7 @@ public class Ex2 {
         counter.set(0);
         List<String> mergedResultList = stringListUpperCase.stream()
                 .map(s -> s + "-" + stringListLoverCase.get(counter.getAndIncrement()))
-                .toList();
+                .collect(Collectors.toList());
 
         System.out.println("Lover letter list: stringListLoverCase");
         System.out.println(stringListLoverCase);

@@ -8,7 +8,7 @@ Get two separate List from one over streams.
 
 File: [src/main/java/streams/Ex1.java](./src/main/java/streams/Ex1.java)
 
-[Video: YouTube](https://youtu.be/0JlPy311PCA)
+[Video: YouTube](https://youtu.be/o2f2jfcMXUE)
 
 ***
 Add the content from a list to an other list as streams.
@@ -17,7 +17,7 @@ Add the content from a list to an other list as streams.
 
 File: [src/main/java/streams/Ex2.java](./src/main/java/streams/Ex2.java)
 
-[Video: YouTube](https://youtu.be/MyFzoSlBgAA)
+[Video: YouTube](https://youtu.be/XTp2zJv93mw)
 
 ***
 Example for Filtering Lists with Streams 
