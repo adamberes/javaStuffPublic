@@ -1,5 +1,7 @@
 package streams;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Predicate;
@@ -19,15 +21,18 @@ public class Ex2 {
                         s -> !s.isEmpty(), (s) -> String.format("%s", (char) loverCaseLetter.incrementAndGet()) + counter.incrementAndGet())
                 .limit(10)
                 .collect(Collectors.toList());
+
         counter.set(1);
         List<String> stringListUpperCase = Stream.iterate("A1",
                         s -> !s.isEmpty(), (s) -> String.format("%s", (char) upperCaseLetter.incrementAndGet()) + counter.incrementAndGet())
                 .limit(10)
                 .collect(Collectors.toList());
+
         counter.set(0);
         List<String> mergedResultList = stringListUpperCase.stream()
                 .map(s -> s + "-" + stringListLoverCase.get(counter.getAndIncrement()))
                 .toList();
+
         System.out.println("Lover letter list: stringListLoverCase");
         System.out.println(stringListLoverCase);
         System.out.println("Capital letter list: stringListUpperCase");
