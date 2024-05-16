@@ -5,7 +5,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Ex3 {
-
+    
+    public Ex3() {
+    }
     private List<PathElement>  buildPathElementList(String stringBase) {
         List<String> pathInListBase = Arrays.asList(stringBase.split("\\\\"));
         return  pathInListBase.stream()
@@ -36,8 +38,7 @@ public class Ex3 {
         List<PathElement> pathElementList = buildPathElementList(new StringBuilder().append(s1).append(s2).toString());
         return buildPathFromPathElement( pathElementList);
     }
-    public Ex3() {
-    }
+
     public String pathSubtraction(String basePath, String path){
         boolean debug = false;//include conditional debug with true
         List<PathElement> pathElementListBase = buildPathElementList(basePath);
@@ -59,8 +60,7 @@ public class Ex3 {
     }
 
     public static void main(String[] args) {
-       Ex3 ex3 = new Ex3();
-//        String stringBase = "C:\\Users\\Adam Beres";
+        Ex3 ex3 = new Ex3();
         String stringBase = "C:\\Users";
         String string     = "C:\\Users\\Adam Beres\\OneDrive\\Bilder\\ControlCenter4\\Scan\\";
         String stringExpectedResult = "Bilder\\ControlCenter4\\Scan\\";
