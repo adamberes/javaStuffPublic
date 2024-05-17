@@ -14,23 +14,23 @@ public class Ex1 {
 
     void get2ListFromOneWithStreams() {
         AtomicInteger counter = new AtomicInteger(1);
-        AtomicInteger loverCaseLetter = new AtomicInteger('a');
+        AtomicInteger lowerCaseLetter = new AtomicInteger('a');
         List<String> stringListSecondResult = new ArrayList<>();
 
-        List<String> stringListLoverCase = Stream.iterate("a1",
-                        s -> !s.isEmpty(), (s) -> String.format("%s", (char) loverCaseLetter.incrementAndGet()) + counter.incrementAndGet())
+        List<String> stringListLowerCase = Stream.iterate("a1",
+                        s -> !s.isEmpty(), (s) -> String.format("%s", (char) lowerCaseLetter.incrementAndGet()) + counter.incrementAndGet())
                 .limit(10)
                 .collect(Collectors.toList());
 
-        List<String> stringListFirstResult = stringListLoverCase.stream()
+        List<String> stringListFirstResult = stringListLowerCase.stream()
                 .map(s -> {
                     stringListSecondResult.add(s.substring(1));
                     return s.substring(0,1);
                 })
                 .collect(Collectors.toList());
 
-        System.out.println("Input list: stringListLoverCase");
-        System.out.println(stringListLoverCase);
+        System.out.println("Input list: stringListLowerCase");
+        System.out.println(stringListLowerCase);
         System.out.println("First ResultList stringListFirstResult");
         System.out.println(stringListFirstResult);
         System.out.println("Second ResultList stringListSecondResult");

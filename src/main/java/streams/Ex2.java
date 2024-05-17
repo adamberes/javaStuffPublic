@@ -14,11 +14,11 @@ public class Ex2 {
 
     void combineDataFromTwoStreams() {
         AtomicInteger counter = new AtomicInteger(1);
-        AtomicInteger loverCaseLetter = new AtomicInteger('a');
+        AtomicInteger lowerCaseLetter = new AtomicInteger('a');
         AtomicInteger upperCaseLetter = new AtomicInteger('A');
 
-        List<String> stringListLoverCase = Stream.iterate("a1",
-                        s -> !s.isEmpty(), (s) -> String.format("%s", (char) loverCaseLetter.incrementAndGet()) + counter.incrementAndGet())
+        List<String> stringListLowerCase = Stream.iterate("a1",
+                        s -> !s.isEmpty(), (s) -> String.format("%s", (char) lowerCaseLetter.incrementAndGet()) + counter.incrementAndGet())
                 .limit(10)
                 .toList();
 
@@ -30,14 +30,14 @@ public class Ex2 {
 
         counter.set(0);
         List<String> mergedResultList = stringListUpperCase.stream()
-                .map(s -> s + "-" + stringListLoverCase.get(counter.getAndIncrement()))
+                .map(s -> s + "-" + stringListLowerCase.get(counter.getAndIncrement()))
                 .collect(Collectors.toList());
 
-        System.out.println("Lover letter list: stringListLoverCase");
-        System.out.println(stringListLoverCase);
+        System.out.println("Lower letter list: stringListLowerCase");
+        System.out.println(stringListLowerCase);
         System.out.println("Capital letter list: stringListUpperCase");
         System.out.println(stringListUpperCase);
-        System.out.println("Combined list: mergedResultList Elements from stringListLoverCase added to stringListUpperCase");
+        System.out.println("Combined list: mergedResultList Elements from stringListLowerCase added to stringListUpperCase");
         System.out.println(mergedResultList);
     }
 
