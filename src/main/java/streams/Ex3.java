@@ -13,23 +13,23 @@ public class Ex3 {
         return  pathInListBase.stream()
                 .peek(p -> System.out.println(p.toString()))
                 .map(p -> new PathElement(p, pathInListBase.indexOf(p)))
-                .peek(p -> System.out.println("0name=" + p.getName() + " i=" + p.getOrder()))
+                .peek(p -> System.out.println("0name=" + p.name() + " i=" + p.order()))
                 .collect(Collectors.toList());
     }
 
     private List<PathElement>  pathPathElementSubstraction(List<PathElement> pathElementListBase, List<PathElement> pathElementList)
     {
         return pathElementList.stream()
-                .peek(p -> System.out.println("1name=" + p.getName() + " i=" + p.getOrder()))
+                .peek(p -> System.out.println("1name=" + p.name() + " i=" + p.order()))
                 .filter(two -> pathElementListBase.stream()
-                .peek(p -> System.out.println("2name=" + p.getName() + " i=" + p.getOrder()))
-                .noneMatch(one -> (one.getName().equals(two.getName()) && one.getOrder() == two.getOrder())))
-                .peek(p -> System.out.println("3name=" + p.getName() + " i=" + p.getOrder()))
+                .peek(p -> System.out.println("2name=" + p.name() + " i=" + p.order()))
+                .noneMatch(one -> (one.name().equals(two.name()) && one.order() == two.order())))
+                .peek(p -> System.out.println("3name=" + p.name() + " i=" + p.order()))
                 .distinct().collect(Collectors.toList());
     }
     private String buildPathFromPathElement(List<PathElement> pathElementListRest) {
         StringBuilder stringArray00 = new StringBuilder();
-        pathElementListRest.forEach(s -> stringArray00.append(s.getName() + "\\"));
+        pathElementListRest.forEach(s -> stringArray00.append(s.name() + "\\"));
         return stringArray00.toString();
     }
 
