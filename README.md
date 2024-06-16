@@ -1,4 +1,8 @@
 # javaStuffPublic
+## Example with r2rdbc, H2 MEM and Spring boot 
+
+File: [src/main/java/r2dbc_h2mem/r2dbH2Application.java](./src/main/java/r2dbc_h2mem/r2dbH2Application.java)
+
 ## Examples with streams
 
 
