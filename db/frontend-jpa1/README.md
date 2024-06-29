@@ -1,4 +1,4 @@
-# Additional installed and used components
+# Additional installed and used components in React
 
 * npm install @material-ui/core
 * npm install @mui/material @emotion/react @emotion/styled
