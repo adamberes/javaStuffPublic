@@ -21,7 +21,7 @@ Example of Future with Executor Service and multi line Lambda
 <u>Usecase:</u> Get even and odd number from a list
 File: [lambda/src/main/java/streams/Ex1.java](./lambda/src/main/java/streams/Ex1.java)
 
-## Examples with streams
+## Examples with Streams
 
 Get two separate List from one over streams.
 
