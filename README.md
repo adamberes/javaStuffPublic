@@ -13,7 +13,6 @@
 * React Frontend for the above Examples
     * Project: [/db/r2dbc](./db/r2dbc)
 
-Project: [r2dbc](./r2dbc)
 
 ## Example with Lambda
 
