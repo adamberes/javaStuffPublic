@@ -2,14 +2,17 @@ package de.adamberes.controller;
 
 import de.adamberes.entities.Userx;
 import de.adamberes.service.UserxService;
+import jakarta.persistence.EntityManagerFactory;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.sql.DataSource;
 import java.util.List;
 
 //url: r2dbc:h2:file:///C:/bin/1Project2024Java/javaStuffPublic/db.h2
@@ -22,6 +25,9 @@ import java.util.List;
 public class UserxController {
     @Autowired
     private final UserxService userxService;
+
+
+//select * from userx;
 
     @GetMapping("users")
     public List<Userx> getUsers() throws InterruptedException{

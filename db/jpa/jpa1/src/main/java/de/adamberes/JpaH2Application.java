@@ -39,6 +39,5 @@ public class JpaH2Application {
         dataSourceBuilder.driverClassName("org.h2.Driver");
         dataSourceBuilder.url("jdbc:h2:mem:///db.h2");
         dataSourceBuilder.username("beres");
-        dataSourceBuilder.password("beres");
         return dataSourceBuilder.build();
     }}

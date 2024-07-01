@@ -1,11 +1,12 @@
 spring:
+  r2dbc:
+    url: r2dbc:h2:mem:///db.h2
+
   datasource:
     url: jdbc:h2:mem:///db.h2
     driverClassName: org.h2.Driver
     username: beres
+    password: beres
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
-    jpa.hibernate.ddl-auto: update
     show-sql: true
-  main:
-    allow-bean-definition-overriding: true
