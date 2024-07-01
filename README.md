@@ -4,6 +4,7 @@
 
 * jpa Bean Configuration for the Datasource
   * Project: [/db/jpa/jpa1](./db/jpa/jpa1)
+  * application.yaml not need configuration in in the Bean Configuration 
 * jpa with Xml Configuration
     * Project: [/db/jpa/jpa2](./db/jpa/jpa2)
 * jpa with Autoconfiguration
