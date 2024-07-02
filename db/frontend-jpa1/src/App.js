@@ -12,9 +12,23 @@ function App() {
   },[]);
 
   const getData = async () => {
-    const response = await fetch('http://localhost:8080/api/users')
-      .then((response) => response.json());
-      setUsers(response);};
+    try {
+      const response = await fetch('http://localhost:8080/api/users');
+      // check if response is ok
+      if (!response.ok) {
+        throw new Error('Server is not accessible');
+      }
+      const data = await response.json();
+      setUsers(data);
+    } catch (error) {
+      // Set error state
+      setError(error.message);
+    }
+  };
+
+  if(error) {
+    return <p>Error: {error}</p>;
+  }
 
   console.log(users);
 
