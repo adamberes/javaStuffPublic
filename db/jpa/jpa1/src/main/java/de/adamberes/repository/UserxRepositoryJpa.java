@@ -8,4 +8,5 @@ import java.util.List;
 public interface UserxRepositoryJpa extends JpaRepository<Userx, Long> {
 
     List<Userx> findAll();
+    Userx saveAndFlush(Userx userx);
 }

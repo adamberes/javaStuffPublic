@@ -21,4 +21,8 @@ public class UserxService {
         return userxRepositoryJpa.findAll();
     }
 
+    public Userx saveUserx(Userx userx) {
+        return userxRepositoryJpa.saveAndFlush(userx);
+    }
+
 }
