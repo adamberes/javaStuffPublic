@@ -22,7 +22,6 @@ public class UserxService {
     }
 
     public Userx saveUserx(Userx userx) {
-        return userxRepositoryJpa.saveAndFlush(userx);
+        return userxRepositoryJpa.save(userx);
     }
-
 }
