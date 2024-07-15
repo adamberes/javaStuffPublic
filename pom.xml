@@ -21,12 +21,13 @@
     <maven.compiler.target>${java.version}</maven.compiler.target>
   </properties>
   <modules>
-    <module>lambda/pom.xml</module>
-    <module>streams/pom.xml</module>
+    <module>lambda</module>
+    <module>streams</module>
     <module>db/jpa/jpa1</module>
     <module>db/jpa/jpa2</module>
     <module>db/jpa/jpa3</module>
     <module>db/r2dbc</module>
+    <module>java-updates-from-vers-8</module>
   </modules>
 
   <dependencies>

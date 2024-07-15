@@ -9,7 +9,7 @@
     <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
   </parent>
 
-  <groupId>org.example</groupId>
+  <groupId>de.adamberes</groupId>
   <artifactId>lambda</artifactId>
   <version>1.0</version>
 
